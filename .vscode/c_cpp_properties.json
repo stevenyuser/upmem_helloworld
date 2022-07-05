@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/include/dpu"
+                "/usr/include/dpu",
+                "/usr/share/upmem/include/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",
