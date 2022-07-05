@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jul  5 14:04:17 2022
+# Make data base, printed on Tue Jul  5 14:17:37 2022
 
 # Variables
 
@@ -91,7 +91,6 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 SESSION_MANAGER = local/safari-laptop:@/tmp/.ICE-unix/1541,unix/safari-laptop:/tmp/.ICE-unix/1541
 # environment
- 
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 XDG_MENU_PREFIX = gnome-
@@ -195,6 +194,7 @@ MAKE_COMMAND := make
 VSCODE_IPC_HOOK = /run/user/1000/vscode-06652d66-1.68.1-main.sock
 # makefile
 MAKEFLAGS = pqrR
+ 
 # environment
 MFLAGS = -pqrR
 # automatic
@@ -232,7 +232,7 @@ GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # automatic
 ^F = $(notdir $^)
 # makefile (from 'Makefile', line 22)
-__dirs := 
+__dirs := $(subst ,, )
 # default
 SUFFIXES := 
 # environment
@@ -263,10 +263,10 @@ VSCODE_PID = 3018
 # Directories
 
 # host (device 66306, inode 31064253): 3 files, no impossibilities.
-# . (device 66306, inode 31064084): 7 files, no impossibilities.
+# . (device 66306, inode 31064084): 9 files, no impossibilities.
 # dpu (device 66306, inode 31064251): 3 files, no impossibilities.
 
-# 13 files, no impossibilities in 3 directories.
+# 15 files, no impossibilities in 3 directories.
 
 # Implicit Rules
 
@@ -276,16 +276,16 @@ VSCODE_PID = 3018
 
 bin/dpu_code: dpu/helloworld.c
 #  Implicit rule search has not been done.
-#  Last modified 2022-07-05 14:03:57.284941481
+#  Last modified 2022-07-05 14:15:23.779964521
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 35):
+#  recipe to execute (from 'Makefile', line 34):
 	dpu-upmem-dpurte-clang ${DPU_FLAGS} -o $@ ${DPU_SOURCES}
 
 # Not a target:
 dpu/helloworld.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 13:50:22.516825643
+#  Last modified 2022-07-05 14:06:12.508732338
 #  File has been updated.
 #  Successfully updated.
 
@@ -299,10 +299,10 @@ all: bin/host_code bin/dpu_code
 
 bin/host_code: host/helloworld_host.c
 #  Implicit rule search has not been done.
-#  Last modified 2022-07-05 14:03:57.240941552
+#  Last modified 2022-07-05 14:15:23.735964579
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 32):
+#  recipe to execute (from 'Makefile', line 31):
 	$(CC) -o $@ ${HOST_SOURCES} ${HOST_FLAGS}
 
 .PHONY: all clean test
@@ -313,7 +313,7 @@ bin/host_code: host/helloworld_host.c
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-05 14:03:48.356955725
+#  Last modified 2022-07-05 14:17:33.146618525
 #  File has been updated.
 #  Successfully updated.
 
@@ -322,13 +322,13 @@ test: all
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 41):
+#  recipe to execute (from 'Makefile', line 40):
 	./${HOST_TARGET}
 
 # Not a target:
 host/helloworld_host.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-05 13:57:26.045638297
+#  Last modified 2022-07-05 14:07:52.73258419
 #  File has been updated.
 #  Successfully updated.
 
@@ -343,7 +343,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 38):
+#  recipe to execute (from 'Makefile', line 37):
 	$(RM) -r $(BUILDDIR)
 
 # files hash-table stats:
@@ -354,12 +354,12 @@ clean:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 206 B / avg = 9 B
-# current buf: size = 8162 B / used = 206 B / count = 21 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 221 B / avg = 9 B
+# current buf: size = 8162 B / used = 221 B / count = 23 / avg = 9 B
 
-# strcache performance: lookups = 44 / hit rate = 52%
+# strcache performance: lookups = 46 / hit rate = 50%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=3/44=7%
-# Finished Make data base on Tue Jul  5 14:04:17 2022
+# Load=23/8192=0%, Rehash=0, Collisions=3/46=7%
+# Finished Make data base on Tue Jul  5 14:17:37 2022
 
  
