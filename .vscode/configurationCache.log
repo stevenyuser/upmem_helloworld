@@ -1,1 +1,0 @@
-{"buildTargets":["all","bin/dpu_code","bin/host_code","bin/nw_dpu","bin/nw_host","clean","test"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
